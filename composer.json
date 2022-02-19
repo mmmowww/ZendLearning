@@ -13,7 +13,11 @@
         "php": "^5.6 || ^7.0",
         "zendframework/zend-component-installer": "^1.0 || ^2.1",
         "zendframework/zend-mvc": "^3.1.1",
-        "zfcampus/zf-development-mode": "^3.2"
+        "zfcampus/zf-development-mode": "^3.2",
+        "snapshotpl/zf-snap-php-debug-bar": "^1.0",
+        "zendframework/zend-debug": "^2.6",
+        "jokkedk/zfdebug": "1.6.2",
+        "zendframework/zend-developer-tools": "^2.0"
     },
     "autoload": {
         "psr-4": {
@@ -37,5 +41,7 @@
         ],
         "serve": "php -S 0.0.0.0:8080 -t public",
         "test": "phpunit"
+    },
+    "require-dev": {
     }
 }

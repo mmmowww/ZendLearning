@@ -5,16 +5,14 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-/**
- * List of enabled modules for this application.
- *
- * This should be an array of module namespaces used in the application.
- */
-return [
-	'Zend\Log',
-	'Zend\Router',
-	'Zend\Validator',
-	'ZendDeveloperTools',
-    'Application',
-	'ZfSnapPhpDebugBar',
-];
+namespace Application;
+
+class Module
+{
+    const VERSION = '3.1.4dev';
+
+    public function getConfig()
+    {
+        return include __DIR__ . '/../config/module.config.php';
+    }
+}
