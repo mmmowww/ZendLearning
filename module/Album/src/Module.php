@@ -5,14 +5,12 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Application;
+namespace Album;
 
-class Module
-{
-    const VERSION = '3.1.4dev';
+use Zend\ModuleManager\Feature\ConfigProviderInterface;
 
-    public function getConfig()
-    {
-        return include __DIR__ . '/../config/module.config.php';
-    }
+class Module implements ConfigProviderInterface {
+	public function getConfig() {
+		return include __DIR__ . '/../config/module.config.php';
+	}
 }

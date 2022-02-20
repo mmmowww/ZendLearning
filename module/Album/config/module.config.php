@@ -5,7 +5,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Application;
+namespace Album;
 
 use Zend\Router\Http\Literal;
 use Zend\Router\Http\Segment;
@@ -17,17 +17,17 @@ return [
 			'home' => [
 				'type' => Literal::class,
 				'options' => [
-					'route' => '/',
+					'route' => '/album',
 					'defaults' => [
 						'controller' => Controller\IndexController::class,
 						'action' => 'index',
 					],
 				],
 			],
-			'application' => [
+			'test' => [
 				'type' => Segment::class,
 				'options' => [
-					'route' => '/application[/:action]',
+					'route' => '/test[/:action]',
 					'defaults' => [
 						'controller' => Controller\IndexController::class,
 						'action' => 'index',

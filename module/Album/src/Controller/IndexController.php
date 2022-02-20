@@ -5,15 +5,14 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Application\Controller;
+namespace Album\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
-class IndexController extends AbstractActionController
-{
-    public function indexAction()
-    {
-        return new ViewModel();
-    }
+class IndexController extends AbstractActionController {
+	public function indexAction() {
+		die("TEST");
+		return new ViewModel();
+	}
 }

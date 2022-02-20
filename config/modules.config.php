@@ -15,6 +15,7 @@ return [
 	'Zend\Router',
 	'Zend\Validator',
 	'ZendDeveloperTools',
-    'Application',
+	'Application',
 	'ZfSnapPhpDebugBar',
+	'Album',
 ];
