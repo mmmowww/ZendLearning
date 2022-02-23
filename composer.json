@@ -17,7 +17,8 @@
         "snapshotpl/zf-snap-php-debug-bar": "^1.0",
         "zendframework/zend-debug": "^2.6",
         "jokkedk/zfdebug": "1.6.2",
-        "zendframework/zend-developer-tools": "^2.0"
+        "zendframework/zend-developer-tools": "^2.0",
+        "doctrine/doctrine-orm-module":"^1"
     },
     "autoload": {
         "psr-4": {

@@ -1,0 +1,2 @@
+call doctrine-module orm:convert-mapping annotation module/Album/src/ --namespace="Album\Entity\\" --from-database
+rem call doctrine-module orm:generate-entities module/Album/src/ --generate-anotations=true

@@ -12,7 +12,7 @@ use Zend\View\Model\ViewModel;
 
 class IndexController extends AbstractActionController {
 	public function indexAction() {
-		die("TEST");
+		//die("TEST");
 		return new ViewModel();
 	}
 }

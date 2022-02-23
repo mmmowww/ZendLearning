@@ -11,11 +11,19 @@
  * This should be an array of module namespaces used in the application.
  */
 return [
+	'Zend\Cache',
+	'Zend\Form',
+	'Zend\InputFilter',
+	'Zend\Filter',
+	'Zend\Paginator',
+	'Zend\Hydrator',
 	'Zend\Log',
 	'Zend\Router',
 	'Zend\Validator',
 	'ZendDeveloperTools',
-	'Application',
+	'DoctrineModule',
+	'DoctrineORMModule',
 	'ZfSnapPhpDebugBar',
+	'Application',
 	'Album',
 ];
