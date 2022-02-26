@@ -20,6 +20,8 @@ return [
 		// provided by modules themselves. Paths may use GLOB_BRACE notation.
 		'config_glob_paths' => [
 			realpath(__DIR__) . '/autoload/{{,*.}global,{,*.}local}.php',
+			realpath(__DIR__) . '/config/autoload/local/{,*.}php',
+			realpath(__DIR__) . '/config/autoload/global/{,*.}php',
 		],
 
 		// Whether or not to enable a configuration cache.
@@ -59,5 +61,7 @@ return [
 
 	// Initial configuration with which to seed the ServiceManager.
 	// Should be compatible with Zend\ServiceManager\Config.
-	// 'service_manager' => [],
+	'service_manager' => [
+		'doctrine',
+	],
 ];

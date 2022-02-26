@@ -8,7 +8,6 @@
 namespace Album;
 
 use Zend\Router\Http\Literal;
-use Zend\Router\Http\Segment;
 use Zend\ServiceManager\Factory\InvokableFactory;
 
 return [
@@ -17,20 +16,32 @@ return [
 			'home' => [
 				'type' => Literal::class,
 				'options' => [
-					'route' => '/album',
+					'route' => '/album/',
 					'defaults' => [
 						'controller' => Controller\IndexController::class,
 						'action' => 'index',
 					],
 				],
+				"may_terminate" => [
+					"child_routes" => [
+						"type" => Literal::class,
+						"options" => [
+							'route' => 'teft/',
+							'defaults' => [
+								'controller' => Controller\IndexController::class,
+								'action' => 'test',
+							],
+						],
+					],
+				],
 			],
-			'test' => [
-				'type' => Segment::class,
+			'album' => [
+				'type' => Literal::class,
 				'options' => [
-					'route' => '/test[/:action]',
+					'route' => '/test/',
 					'defaults' => [
 						'controller' => Controller\IndexController::class,
-						'action' => 'index',
+						'action' => 'test',
 					],
 				],
 			],
